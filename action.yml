@@ -57,7 +57,7 @@ runs:
   steps:    
     - name: Download artifact with previous storybook build hash
       if: ${{inputs.forceDeploy == 'false'}}
-      uses: dawidd6/action-download-artifact@v2
+      uses: dawidd6/action-download-artifact@v20
       with:
         github_token: ${{inputs.GITHUB_TOKEN}}
         workflow: ${{inputs.artifactWorkflow}}
